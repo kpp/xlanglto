@@ -1,0 +1,11 @@
+[package]
+name = "xlanglto"
+version = "0.1.0"
+authors = ["Roman Proskuryakov <humbug@deeptown.org>"]
+edition = "2018"
+
+[build-dependencies]
+cc = "1.0"
+
+[profile.release]
+lto = false
