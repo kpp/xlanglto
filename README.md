@@ -22,7 +22,7 @@ rustc -Clinker-plugin-lto -L. -Copt-level=2 -Clinker=clang-9 -Clink-arg=-fuse-ld
 
 # Result
 
-[Cross-languate LTO](http://blog.llvm.org/2019/09/closing-gap-cross-language-lto-between.html) will result in an inline call to C function:
+[Cross-language LTO](http://blog.llvm.org/2019/09/closing-gap-cross-language-lto-between.html) will result in an inline call to C function:
 
 ```bash
 $ objdump -d ./target/release/xlanglto | grep "<multiply>:" -A3
